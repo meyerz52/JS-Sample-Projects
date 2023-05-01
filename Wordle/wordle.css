@@ -1,5 +1,5 @@
 :root {
-    --correct: #6c6c6c;
+    --correct: #6ca965;
     --incorrect: #787c7f;
     --partially-correct: #c8b653;
 }
@@ -38,3 +38,17 @@ li {
     align-items: center;
 }
 
+.is-partially-correct {
+    background-color: var(--partially-correct);
+    color: white;
+}
+
+.is-correct {
+    background-color: var(--correct);
+    color: white;
+}
+
+.is-incorrect {
+    background-color: var(--incorrect);
+    color: white;
+}
