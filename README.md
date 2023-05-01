@@ -4,4 +4,5 @@
 
 <ul>
     <li>Dice Simulator</li>
+    <li>Calculator</li>
 </ul>
