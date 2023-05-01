@@ -1,0 +1,132 @@
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calculator {
+    min-height: 40%;
+    min-width: 15%;
+    display: grid;
+    grid-template: repeat(5, 1fr)/repeat(4, 1fr);
+    grid-gap: 0.25em;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 8px;
+    
+}
+
+button {
+    border: 1px solid black;
+    /* margin: 0.15em; */
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s; 
+}
+
+button:hover, .is-depressed {
+    background-color: black;
+    color: white;  
+}
+
+button:active {
+    border: 3px solid white;
+}
+
+
+#displayWindow {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    border: none;
+    display: grid;
+    align-items: center;
+    padding-left: 4px;
+    /* font-size: 5vh; */
+}
+
+[data-operator] i:first-child{
+    pointer-events: none;
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.three {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.six {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+.seven {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+.eight {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.nine {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.zero {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.decimal {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.addition {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.subtraction {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+
+.division {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.multiplication {
+    grid-column: 4;
+    grid-row: 5;
+}
