@@ -1,0 +1,45 @@
+:root {
+    --correct: #6c6c6c;
+    --incorrect: #787c7f;
+    --partially-correct: #c8b653;
+}
+
+main {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#board-container {
+    /* display: grid;
+    grid-template: repeat(6, 1fr) / 1fr; */
+    width: 250px;
+    height: 250px;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    height: calc(100%/ 6);
+}
+
+
+li {
+    border: 1px dashed red;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    
+    
+
+}
+
