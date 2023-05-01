@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/dicegame.css" type="text/css">
+    <script src="dice.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <form>
+                <div class="input-container">
+                    <input type="text" id="numdice" name="numdice" max="99" placeholder=" ">
+                    <label for="numdice">How many dice?</label>
+                </div>
+                <input id="rolldice-btn" type="submit" value="Roll">
+            </form>
+            <div class="sum-container">
+                <p>Sum of Rolls</p>
+                <p id="total-rolls"></p>
+            </div>
+            <div class="showdice-container">
+                <button id="display-dice" class="hidden-btn">Show Dice</button>
+                <div class="dice-container">
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

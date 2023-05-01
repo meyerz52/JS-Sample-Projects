@@ -1,0 +1,97 @@
+.face {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: grid;
+    width: 3em;
+    height: 3em;
+    justify-items: center;
+    align-items: center;
+    margin: 3px;
+    /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+    grid-template-areas:
+        "a . c"
+        "d b e"
+        "f . h";
+    box-shadow: inset 0 5px white, inset 0 -5px #bbb, inset 5px 0 #d7d7d7,
+        inset -5px 0 #d7d7d7;
+    background-color: #e7e7e7;
+}
+
+.face li {
+    background-color: black;
+    border-radius: 50%;
+    padding: 0.35em;
+}
+
+
+/* one */
+.one li:nth-child(1) {
+    grid-area: b;
+}
+
+/* two */
+.two li:nth-child(2) {
+    grid-area: h;
+}
+
+/* three */
+.three li:nth-child(2) {
+    grid-area: b;
+}
+
+.three li:nth-child(3) {
+    grid-area: h;
+}
+
+
+/* four */
+.four li:nth-child(2) {
+    grid-area: f;
+}
+
+.four li:nth-child(4) {
+    grid-area: h;
+}
+
+.four li:nth-child(3) {
+    grid-area: c;
+}
+
+/* five */
+.five li:nth-child(2) {
+    grid-area: f;
+}
+
+.five li:nth-child(4) {
+    grid-area: h;
+}
+
+.five li:nth-child(3) {
+    grid-area: c;
+}
+
+.five li:nth-child(5) {
+    grid-area: b;
+}
+
+/* six */
+.six li:nth-child(2) {
+    grid-area: f;
+}
+
+.six li:nth-child(4) {
+    grid-area: h;
+}
+
+.six li:nth-child(3) {
+    grid-area: c;
+}
+
+.six li:nth-child(5) {
+    grid-area: d;
+}
+
+.six li:nth-child(6) {
+    grid-area: e;
+}

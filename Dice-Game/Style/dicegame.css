@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;700;900&display=swap');
+@import url('./dice.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+main {
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    margin: 0 15px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.input-container {
+    position: relative;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 200ms, font-weight 100ms;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 3px;
+
+
+
+}
+
+label,
+input[type="text"] {
+    width: 13rem;
+    height: 2rem;
+    font-size: 1.1em;
+    font-weight: 300;
+    transform: translateY(-3px);
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label {
+    font-weight: 200;
+    transform: translateY(-30px) translateX(-27px) scale(75%);
+}
+
+input[type="submit"],
+button {
+    font-weight: 700;
+    border: none;
+    background-color: #ED1C24;
+    border-radius: 8px;
+    font-size: 1.25em;
+    padding: 0.1em 2em;
+    box-shadow: -2px 3px 7px -1px rgba(0, 0, 0, 0.25);
+    transition: transform 100ms, background-color 100ms, color 100ms;
+    cursor: pointer;
+}
+
+.hidden-btn {
+    visibility: hidden;
+}
+
+#display-dice {
+    background-color: #235789;
+    width: 10em;
+    font-weight: 500;
+    color: white;
+
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-1px);
+    box-shadow: none;
+    background-color: #235789;
+    color: white;
+}
+
+.sum-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.sum-container p {
+    font-size: 1.2em;
+    padding-right: 10px;
+    font-weight: 200;
+}
+
+#total-rolls {
+    font-weight: 400;
+    color: #235789;
+}
+
+.showdice-container {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    gap: 5px 10px;
+    margin-top: 35px;
+    border: 1px solid black;
+    width: 20em;
+    min-height: 20em;
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 20px 20px 74px #d9d9d9,
+        -20px -20px 74px #ffffff;
+}
